@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chivunk - Agência Digital</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #banner {
+            height: 400px;
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Adiciona o estilo para o widget do WhatsApp */
+        .elfsight-app-f8e6ed6e-26e3-483f-80f8-39c10ff2468d {
+            position: fixed;
+            bottom: 100px; /* Afasta para cima */
+            right: 30px;   /* Afasta da margem direita */
+            z-index: 1000; /* Garante que o widget ficará sobre outros elementos */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Chivunk</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testemunhos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Banner Section -->
+<section id="banner" class="text-center bg-primary text-white">
+    Bem-vindo à Chivunk
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+    <h2 class="text-center mb-4">Sobre Nós</h2>
+    <p class="text-center">A Chivunk é uma agência digital inovadora que ajuda empresas a crescerem através de soluções digitais eficazes. Nossa equipe é formada por especialistas em desenvolvimento web, marketing digital e design, prontos para transformar suas ideias em realidade.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="container py-5 bg-light">
+    <h2 class="text-center mb-4">Nossos Serviços</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites responsivos e personalizados para atender suas necessidades.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Marketing Digital</h3>
+            <p>Estratégias digitais para aumentar o alcance da sua marca e atrair novos clientes.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Consultoria de Design</h3>
+            <p>Soluções criativas em design gráfico e experiência do usuário.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="container py-5">
+    <h2 class="text-center mb-4">Nosso Portfólio</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/350x200" class="img-fluid" alt="Portfólio 1">
+            <h4 class="text-center mt-2">Projeto 1</h4>
+        </div>
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/350x200" class="img-fluid" alt="Portfólio 2">
+            <h4 class="text-center mt-2">Projeto 2</h4>
+        </div>
+        <div class="col-md-4">
+            <img src="https://via.placeholder.com/350x200" class="img-fluid" alt="Portfólio 3">
+            <h4 class="text-center mt-2">Projeto 3</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="container py-5 bg-light">
+    <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">A Chivunk nos ajudou a transformar nosso site em uma verdadeira máquina de vendas!</p>
+                <footer class="blockquote-footer">João Silva, CEO da Empresa X</footer>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">O time de marketing digital da Chivunk é incrível. Nossos leads aumentaram em 200%!</p>
+                <footer class="blockquote-footer">Maria Souza, Diretora de Marketing da Empresa Y</footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Entre em Contato</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white">
+    <p>&copy; 2024 Chivunk Agência Digital. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Widget WhatsApp -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-f8e6ed6e-26e3-483f-80f8-39c10ff2468d" data-elfsight-app-lazy></div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

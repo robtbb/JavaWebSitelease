@@ -1,0 +1,455 @@
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #333333);
+    color: #ffffff;
+    text-align: center;
+    flex-direction: column;
+    width:100vw;
+}
+
+.banner-content {
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+
+.contact-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#about {
+    background-color: #8a8585; /* Cor de fundo desejada */
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 100%; /* Garante que a seção ocupe 100% da largura */
+    margin: 0; /* Remove margens externas */
+    padding: 20px 0; /* Mantém o padding apenas em cima e embaixo, se necessário */
+    color: white;
+}
+
+
+.about-section {
+    height: 100vh; /* Define a altura como 100% da viewport */
+    background-color: #f8f9fa; /* Define a cor de fundo como um tom claro */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Adiciona espaço ao redor */
+}
+
+.about-section h2 {
+    color: #343a40; /* Cor do texto do título */
+}
+
+.interactive-img {
+    transition: transform 0.3s ease; /* Animação suave para o efeito de zoom */
+}
+
+.interactive-img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+
+
+
+
+
+/* Estilos do contêiner interno, se necessário */
+#about .content {
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura da seção */
+    padding: 0 20px; /* Adiciona padding lateral ao conteúdo */
+}
+
+
+.banner-image {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+#banner {
+    height: 400px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#services{
+    background-color: #5c5757;
+}
+
+
+/* Serviço card styling */
+.service-card {
+    padding: 2rem; /* espaçamento interno */
+    width: 100%; /* faz as cartas ocuparem 100% da coluna */
+    max-width: 350px; /*define uma largura maxima para as cartas*/
+    margin: 1rem auto; /*centraliza as cartas com margem*/
+    background-color: #f8f3f3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow:  8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover para o card */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#portfolio{
+    background-color: #5c5757;
+}
+
+/* parte do portifolio */
+/* Estilo para a seção de portfólio */
+#portfolio {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    padding: 50px 0; /* Padding adicional */
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda o card */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.portfolio-card img {
+    transition: transform 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente */
+    color: white; /* Texto branco */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Efeito de transição suave */
+    text-align: center; /* Centraliza o texto */
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1; /* Torna o overlay visível ao passar o mouse */
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+}
+
+.portfolio-overlay p {
+    font-size: 1rem; /* Tamanho da fonte da descrição */
+    padding: 0 10px; /* Padding lateral */
+}
+
+/* Estilo adicional para melhorar a visualização */
+h2 {
+    font-family: 'Arial', sans-serif; /* Fonte da seção */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do título */
+}
+
+.portfolio-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.25rem; /* Tamanho da fonte do título ajustado */
+}
+
+.portfolio-overlay p {
+    font-size: 0.9rem; /* Tamanho da fonte da descrição ajustado */
+}
+
+
+/* Estilo da seção de serviços */
+#services {
+    background: radial-gradient(circle at bottom, #808080 0%, #000000 70%);
+}
+
+/* Estilo dos cartões de serviço */
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Adiciona transição suave */
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.service-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do cartão ao passar o mouse */
+}
+
+/* Estilos de texto */
+.ds {
+    color: #fdf6f6; /* Preto */
+}
+
+
+.text-light {
+    color: #080808 !important; /* Cor branca */
+}
+
+
+.service-card h3 {
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
+    overflow: hidden; /* Garante que o texto não ultrapasse o contêiner */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for longo demais */
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 2rem; /* Aumenta o espaçamento interno */
+}
+
+.service-image {
+    height: 200px; /* Defina a altura desejada */
+    width: 100%; /* A largura será 100% do contêiner pai */
+    object-fit: cover; /* Mantém a proporção e cobre a área definida */
+    border-radius: 8px; /* Canto arredondado para as imagens */
+}
+
+
+.portfolio-card {
+    border: 2px solid #ccc; /* Borda do quadrado */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde partes da imagem que saem do quadrado */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição para a interação */
+    position: relative; /* Necessário para posicionar a sombra */
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do quadrado ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao quadrado ao passar o mouse */
+}
+
+.portfolio-card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do quadrado */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+}
+
+
+#testimonials {
+    background-color: #f9f9f9; /* Cor de fundo mais suave */
+    padding: 50px 0; /* Aumenta o espaço interno */
+}
+
+.testimonial-card {
+    background: #ffffff; /* Cor de fundo do cartão */
+    border-left: 5px solid #007bff; /* Borda lateral colorida */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.blockquote {
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte do depoimento */
+}
+
+.blockquote-footer {
+    font-size: 0.9rem; /* Tamanho da fonte do autor */
+    color: #6c757d; /* Cor do texto do autor */
+    margin-top: 10px; /* Espaço acima do autor */
+}
+
+
+
+
+/* Adiciona o estilo para o widget do WhatsApp */
+.elfsight-app-f8e6ed6e-26e3-483f-80f8-39c10ff2468d {
+    position: fixed;
+    bottom: 100px; /* Afasta para cima */
+    right: 30px;   /* Afasta da margem direita */
+    z-index: 1000; /* Garante que o widget ficará sobre outros elementos */
+}
+
+
+
+/*  parte do email */
+/* Estilo para a seção de contato */
+#contact {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#contact h2 {
+    color: #343a40; /* Cor do título */
+    font-weight: 600; /* Negrito */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas nos campos de entrada */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Borda azul ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    padding: 12px 20px; /* Aumenta o padding do botão */
+    font-weight: bold; /* Botão em negrito */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+
+/* contatos final */
+.social-icons a {
+    font-size: 24px;
+    color: #007bff; /* Cor do ícone */
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+
+  .testimonials {
+        background-color: #f8f9fa; /* Fundo claro */
+    }
+    
+    .testimonial-card {
+        background-color: #ffffff; /* Cartão branco */
+        border: 1px solid #ddd; /* Borda cinza clara */
+        transition: box-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
+    }
+
+    .testimonial-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    }
+
+    .blockquote {
+        color: #333; /* Texto escuro para contraste */
+    }
+
+    .blockquote-footer {
+        color: #666; /* Texto de rodapé em cinza */
+    }
+
+
+    
+
+
+
+
+
+    /* parte do baner */
+/* Estilização da seção de banner para tela inteira */
+.banner-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    padding: 20px 40px;
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 80%;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* Botão estilizado */
+.contact-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+
+
