@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar-->
+    <div id="navbar"></div>
+
+    <!--home banner-->
+    <secton id="home" class="banner-sectoin text-center">
+        <div class="banner-content">
+            <h1> Bem-Vindo á Sitelease </h1>
+            <h2 class="text">O desenvolvimento da sua empresa a um clike</h2>
+            <h3>Marketig Digital</h3>
+            <button class="contact-button">Entrar em Contato</button>
+        </div>
+
+        <img
+        src="https://cdn.pixabay.com/photo/2019/09/15/12/09/network-4478141_1280.jpg"
+        alt="Imagem decorativa"
+        class="banner-image"
+        />
+    </secton>
+
+    <!-- onde vai aparecer o footer -->
+     <div id="footer"></div>
+
+     <!--javascript para chamar as crianças-->
+     <script>
+        //carregar o navbar
+        fetch('./navbar.html')
+            .then(response=>response.text())
+            .then(data=> document.getElementById('navbar').innerHTML = data);
+        //carregar footer
+        fetch('./footer.html')
+            .then(response=>response.text())
+            .then(data=>document.getElementeById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
